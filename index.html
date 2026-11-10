@@ -3,33 +3,186 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Moje portfólio — začiatok</title>
-  <!-- Vzhľad stránky je v samostatnom súbore styles.css (vrstva CSS) -->
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Osobné portfólio krajčírskej tvorby, odevov a premien látok.">
+  <title>Meno Priezvisko — krajčírske portfólio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
 
-  <main class="uvitanie">
-    <div class="emoji">👋</div>
-    <h1>Tu vznikne moje portfólio</h1>
-    <p class="podtext">
-      Toto je štartová stránka kurzu <strong>Tvorba webstránok</strong>.
-      Odteraz ju budeš meniť ty — s pomocou AI asistenta.
-    </p>
+  <header class="site-header">
+    <a class="wordmark" href="#domov" aria-label="Meno Priezvisko — domov">
+      <span class="wordmark-mark" aria-hidden="true">M<span>.</span></span>
+      <span class="wordmark-name">Meno Priezvisko</span>
+    </a>
 
-    <div class="karta">
-      <p class="karta-nadpis">Ako začať:</p>
-      <ol>
-        <li>Otvor <strong>Copilot Chat</strong> (ikona Copilota vpravo) — sem píšeš, čo chceš vytvoriť.</li>
-        <li>Tento súbor <code>index.html</code> si pozri v <strong>živom náhľade</strong>: pravý klik naň → <em>Show Preview</em>.</li>
-        <li>Choď na <strong>Blok 7</strong> kurzu a postupuj podľa neho.</li>
-      </ol>
-    </div>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-toggle-label">Menu</span>
+      <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+    </button>
 
-    <p class="poznamka">
-      Keď spravíš prvú zmenu, tento text pokojne zmaž — je len na úvod.
-    </p>
+    <nav class="site-nav" id="site-nav" aria-label="Hlavná navigácia">
+      <a href="#projekty">Projekty</a>
+      <a href="#o-mne">O mne</a>
+      <a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="obsah">
+    <section class="hero section-shell" id="domov" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Krajčírstvo · tvorba s citom</p>
+        <h1 id="hero-title">Ahoj, som<br><span class="hero-name">Meno Priezvisko</span><span class="accent-dot">.</span></h1>
+        <p class="hero-intro">Dávam látkam nový príbeh. Tvorím odevy a jedinečné kúsky, v ktorých sa poctivé remeslo stretáva s každodenným životom.</p>
+        <a class="button button-dark" href="#projekty">Pozrieť projekty <span aria-hidden="true">↘</span></a>
+        <p class="hero-note">Kúsok po kúsku. S dôrazom na detail.</p>
+      </div>
+
+      <div class="hero-art" aria-label="Ilustrácia ručne šitých šiat na figuríne">
+        <div class="hero-art-frame">
+          <span class="art-caption art-caption-top">Z ateliéru</span>
+          <svg class="hero-drawing" viewBox="0 0 480 560" role="img" aria-labelledby="hero-art-title">
+            <title id="hero-art-title">Ilustrácia šiat z jemnej ružovej látky</title>
+            <path class="drawing-thread" d="M92 452c32-31 13-65 44-93s56-17 68-53 34-28 44-66 37-48 54-75 24-64 70-87"/>
+            <path class="dress-shadow" d="m205 166-39 49-36 33 35 28-23 181h198l-22-181 34-28-36-33-39-49c-12 17-28 25-43 25s-31-8-43-25Z"/>
+            <path class="dress-shape" d="m205 155-37 47-37 35 36 31-23 189h194l-23-189 36-31-37-35-37-47c-12 17-27 26-36 26s-24-9-36-26Z"/>
+            <path class="dress-neck" d="M205 155c10 22 24 33 36 33s26-11 36-33"/>
+            <path class="dress-seam" d="M241 190v267m-58-265 24 19m92-19-24 19M155 237l54 15m118-15-54 15"/>
+            <path class="dress-pleat" d="m181 288-10 153m40-144-5 160m72-160 5 160m23-169 10 153"/>
+            <path class="dress-belt" d="M172 270c42 17 96 17 138 0"/>
+            <path class="dress-bow" d="M241 266c-15-17-40-12-34 2 5 11 22 8 34-2Zm0 0c15-17 40-12 34 2-5 11-22 8-34-2Zm0 0v12"/>
+            <path class="figure-line" d="M223 154c-9-17-8-37 2-50 9-11 25-13 34-4 10 11 9 31-2 53m-36 0-19 11m57-11 19 11m-65 286 2 18m46-18-2 18"/>
+            <circle class="flower flower-one" cx="113" cy="158" r="13"/>
+            <circle class="flower flower-two" cx="369" cy="361" r="8"/>
+            <circle class="flower flower-three" cx="344" cy="122" r="5"/>
+            <path class="sparkle" d="M367 172v19m-9-9h18m-226 171v15m-7-7h14"/>
+          </svg>
+          <span class="art-caption art-caption-bottom">Ručne. S citom. Navždy.</span>
+          <span class="hero-stamp" aria-hidden="true">Ateliér<br>pre veci<br>s príbehom</span>
+        </div>
+        <span class="hero-art-index" aria-hidden="true">01 / 03</span>
+      </div>
+
+      <a class="scroll-cue" href="#projekty"><span></span> Rolovať nižšie</a>
+    </section>
+
+    <section class="projects section-shell section-space" id="projekty" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Vybrané práce · 2023—2025</p>
+          <h2 id="projects-title">Projekty<span class="accent-dot">.</span></h2>
+        </div>
+        <p class="section-aside">Každý kúsok začína nápadom.<br>A pokračuje dobrým materiálom.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <a class="project-visual project-visual-rose" href="#kontakt" aria-label="Projekt Ľanové ráno — informácie na vyžiadanie">
+            <span class="project-number">01</span>
+            <svg class="project-illustration illustration-dress" viewBox="0 0 260 290" aria-hidden="true">
+              <path d="m99 49-24 36-26 20 24 20-16 127h145l-16-127 24-20-26-20-24-36c-10 14-22 21-31 21s-21-7-30-21Z"/>
+              <path class="illustration-detail" d="M99 49c8 17 20 26 31 26s23-9 31-26m-31 27v176m-64-126 64 18 64-18m-128 22h128"/>
+              <path class="illustration-detail illustration-thread" d="M33 223c24-30 6-47 34-66"/>
+            </svg>
+            <span class="visual-label">01 / Odev</span>
+            <span class="visual-spark" aria-hidden="true">✳</span>
+          </a>
+          <div class="project-meta">
+            <div><p class="project-type">Ľan · každodennosť</p><h3>Ľanové ráno</h3></div>
+            <a class="project-arrow" href="#kontakt" aria-label="Opýtať sa na projekt Ľanové ráno">↗</a>
+          </div>
+          <p class="project-description">Ľahký letný kúsok ušitý tak, aby s každým nosením mäkol a krásnel.</p>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-visual project-visual-sage" href="#kontakt" aria-label="Projekt Druhý príbeh — informácie na vyžiadanie">
+            <span class="project-number">02</span>
+            <svg class="project-illustration illustration-jacket" viewBox="0 0 260 290" aria-hidden="true">
+              <path d="m90 45-39 31-26 71 42 17 14-28-7 121h112l-7-121 14 28 42-17-26-71-39-31c-7 15-23 24-40 24s-33-9-40-24Z"/>
+              <path class="illustration-detail" d="m90 45 40 56 40-56m-40 56v156m-47-107 47 17 47-17m-96-70 28 31-18 17m86-48-28 31 18 17m-20 41v15m0 22v15m0 22v9"/>
+              <path class="illustration-detail illustration-thread" d="M28 202c20-17 24-43 46-55"/>
+            </svg>
+            <span class="visual-label">02 / Premena</span>
+            <span class="visual-spark" aria-hidden="true">✳</span>
+          </a>
+          <div class="project-meta">
+            <div><p class="project-type">Upcycling · nový začiatok</p><h3>Druhý príbeh</h3></div>
+            <a class="project-arrow" href="#kontakt" aria-label="Opýtať sa na projekt Druhý príbeh">↗</a>
+          </div>
+          <p class="project-description">Obľúbené sako, ktoré dostalo nový strih, lepšiu podšívku a ďalšie roky života.</p>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-visual project-visual-neutral" href="#kontakt" aria-label="Projekt Tichá slávnosť — informácie na vyžiadanie">
+            <span class="project-number">03</span>
+            <svg class="project-illustration illustration-blouse" viewBox="0 0 260 290" aria-hidden="true">
+              <path d="m94 44-39 29-34 69 39 20 21-27-7 122h112l-7-122 21 27 39-20-34-69-39-29c-9 17-22 25-36 25s-27-8-36-25Z"/>
+              <path class="illustration-detail" d="M94 44c8 18 21 29 36 29s28-11 36-29m-36 30v183m-50-122 50 18 50-18m-94-48 36 44m58-44-36 44m-27-10 13 14 13-14"/>
+              <circle class="illustration-button" cx="130" cy="123" r="3"/><circle class="illustration-button" cx="130" cy="145" r="3"/><circle class="illustration-button" cx="130" cy="167" r="3"/>
+            </svg>
+            <span class="visual-label">03 / Na mieru</span>
+            <span class="visual-spark" aria-hidden="true">✳</span>
+          </a>
+          <div class="project-meta">
+            <div><p class="project-type">Hodváb · slávnostný deň</p><h3>Tichá slávnosť</h3></div>
+            <a class="project-arrow" href="#kontakt" aria-label="Opýtať sa na projekt Tichá slávnosť">↗</a>
+          </div>
+          <p class="project-description">Hodvábna blúzka navrhnutá a ušitá na mieru pre chvíle, ktoré zostávajú.</p>
+        </article>
+      </div>
+      <p class="portfolio-note">Ukážkové projekty — názvy aj popisy si môžeš upraviť podľa svojej tvorby.</p>
+    </section>
+
+    <section class="about section-space" id="o-mne" aria-labelledby="about-title">
+      <div class="about-inner section-shell">
+        <img
+          class="about-photo reveal"
+          src="img/fotkaa.jpg"
+          alt="Psík v modrobielom pásikavom svetri, fotografia z portfólia Meno Priezvisko"
+          width="750"
+          height="1000"
+        >
+        <div class="about-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> O mne</p>
+          <h2 id="about-title">Menej, ale<br><em>po svojom.</em></h2>
+          <p>Verím, že odev môže byť viac než len pekná vec. Môže sedieť presne tak, ako má, pripomínať dobrý príbeh a vydržať dlhšie než jednu sezónu.</p>
+          <p>V mojom ateliéri spájam precíznu ručnú prácu s láskou k materiálom, ktoré si zaslúžia druhú šancu. Každý steh má svoj dôvod. Každý kúsok svoj charakter.</p>
+          <a class="text-link" href="#kontakt">Porozprávajme sa o vašom nápade <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-shell" aria-label="Pozvanie na spoluprácu">
+      <p class="eyebrow"><span class="eyebrow-line"></span> Máte nápad? Poďme ho ušiť.</p>
+      <p class="closing-line">Začína sa to <span>jedným rozhovorom.</span></p>
+      <a class="button button-outline" href="#kontakt">Ozvite sa mi <span aria-hidden="true">↗</span></a>
+    </section>
   </main>
 
+  <footer class="site-footer" id="kontakt">
+    <div class="footer-main section-shell">
+      <div class="footer-intro">
+        <a class="wordmark footer-wordmark" href="#domov">
+          <span class="wordmark-mark" aria-hidden="true">M<span>.</span></span>
+          <span class="wordmark-name">Meno Priezvisko</span>
+        </a>
+        <p>Odevy s príbehom.<br>Ušité s citom na Slovensku.</p>
+      </div>
+      <div class="footer-contact">
+        <p class="eyebrow">Každý dobrý kúsok sa začína ahoj.</p>
+        <a class="footer-email" href="mailto:ahoj@example.com">ahoj@example.com <span aria-hidden="true">↗</span></a>
+        <p class="footer-note">Nahraďte ukážkový e-mail svojou adresou.</p>
+      </div>
+      <a class="back-to-top" href="#domov">Späť hore <span aria-hidden="true">↑</span></a>
+    </div>
+    <div class="footer-bottom section-shell">
+      <span>© <span id="current-year">2026</span> Meno Priezvisko</span>
+      <span>Ušité pomaly. Nosené dlho.</span>
+      <a href="#domov">Slovensko · SK</a>
+    </div>
+  </footer>
 </body>
 </html>
