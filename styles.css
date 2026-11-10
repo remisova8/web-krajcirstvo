@@ -26,7 +26,7 @@ body {
   background: var(--white);
   color: var(--ink);
   font-family: var(--font);
-  font-size: 0.94rem;
+  font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
@@ -96,7 +96,7 @@ button:focus-visible {
 
 .wordmark-mark {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.65rem;
+  font-size: 1.8rem;
   line-height: 1;
 }
 
@@ -105,7 +105,7 @@ button:focus-visible {
 }
 
 .wordmark-name {
-  font-size: 0.68rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -121,7 +121,7 @@ button:focus-visible {
 .menu-toggle,
 .back-to-top {
   font: inherit;
-  font-size: 0.7rem;
+  font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-decoration: none;
@@ -157,7 +157,7 @@ button:focus-visible {
   align-items: center;
   gap: 0;
   padding: 4.5rem var(--page-gutter) 6rem;
-  background: url("img/pesruzovabunda.avif") center 48% / cover no-repeat;
+  background: url("img/ruzova%20bunda.webp") center 48% / cover no-repeat;
   color: var(--white);
 }
 
@@ -199,9 +199,9 @@ button:focus-visible {
   gap: 0.8rem;
   margin: 0 0 1.55rem;
   color: var(--muted);
-  font-size: 0.61rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   line-height: 1.5;
   text-transform: uppercase;
 }
@@ -237,7 +237,7 @@ h1 {
 
 .hero-name {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 400;
   font-style: italic;
   letter-spacing: -0.065em;
@@ -251,42 +251,47 @@ h1 {
   max-width: 29rem;
   margin-bottom: 2rem;
   color: rgb(255 255 255 / 90%);
-  font-size: clamp(0.9rem, 1.3vw, 1.03rem);
+  font-size: clamp(1rem, 1.45vw, 1.15rem);
   line-height: 1.9;
 }
 
 .hero-ornament {
   display: block;
-  width: 12rem;
+  width: clamp(16rem, 32vw, 21rem);
+  max-width: 100%;
   height: auto;
-  margin: -0.5rem 0 1.1rem;
+  margin: -0.35rem 0 1.35rem;
+  filter: drop-shadow(0 1px 3px rgb(0 0 0 / 40%));
 }
 
 .ornament-thread,
-.ornament-needle,
-.ornament-leaf {
+.ornament-leaf,
+.ornament-spool,
+.ornament-spool-thread {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .ornament-thread {
-  stroke: #e4b7c0;
-  stroke-dasharray: 2 3;
-  stroke-width: 1.5;
-}
-
-.ornament-needle,
-.ornament-eye {
-  fill: none;
-  stroke: var(--white);
-  stroke-linecap: round;
-  stroke-width: 1.2;
+  stroke: #f2c4cd;
+  stroke-width: 2.8;
 }
 
 .ornament-leaf {
-  stroke: #c4d0ad;
-  stroke-width: 1.4;
+  stroke: #d1ddb8;
+  stroke-width: 2;
+}
+
+.ornament-spool {
+  fill: #925f6b;
+  stroke: #fff8ee;
+  stroke-width: 1.7;
+}
+
+.ornament-spool-thread {
+  stroke: #f2c4cd;
+  stroke-width: 1.7;
 }
 
 .button {
@@ -297,7 +302,7 @@ h1 {
   gap: 1.75rem;
   padding: 0.8rem 1.25rem;
   border: 1px solid transparent;
-  font-size: 0.64rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-decoration: none;
@@ -330,7 +335,7 @@ h1 {
   margin: 1.1rem 0 0;
   color: rgb(255 255 255 / 78%);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.83rem;
+  font-size: 0.95rem;
   font-style: italic;
 }
 
@@ -343,7 +348,7 @@ h1 {
   align-items: center;
   gap: 0.75rem;
   color: var(--white);
-  font-size: 0.59rem;
+  font-size: 0.95rem;
   letter-spacing: 0.12em;
   text-decoration: none;
   text-transform: uppercase;
@@ -385,7 +390,7 @@ h1 {
 .section-heading h2,
 .about-copy h2 {
   margin: 0;
-  font-size: clamp(2.8rem, 5.5vw, 5rem);
+  font-size: clamp(3.05rem, 6vw, 5.4rem);
   letter-spacing: -0.075em;
   line-height: 1.05;
 }
@@ -433,7 +438,7 @@ h1 {
   margin: 0 0 0.35rem;
   color: var(--muted);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.88rem;
+  font-size: 0.98rem;
   font-style: italic;
   line-height: 1.7;
 }
@@ -506,7 +511,7 @@ h1 {
   position: absolute;
   z-index: 2;
   color: rgb(34 34 34 / 65%);
-  font-size: 0.56rem;
+  font-size: 0.95rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
@@ -573,7 +578,7 @@ h1 {
   top: 15%;
   right: 14%;
   color: rgb(255 255 255 / 80%);
-  font-size: 1.5rem;
+  font-size: 1.65rem;
 }
 
 .project-meta {
@@ -587,7 +592,7 @@ h1 {
 .project-type {
   margin: 0 0 0.22rem;
   color: var(--muted);
-  font-size: 0.58rem;
+  font-size: 0.95rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -595,7 +600,7 @@ h1 {
 .project-meta h3 {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
   font-weight: 400;
   line-height: 1.2;
 }
@@ -623,14 +628,14 @@ h1 {
   max-width: 25rem;
   margin: 0.6rem 0 0;
   color: var(--muted);
-  font-size: 0.77rem;
+  font-size: 0.98rem;
   line-height: 1.8;
 }
 
 .portfolio-note {
   margin: 3rem 0 0;
   color: var(--muted);
-  font-size: 0.69rem;
+  font-size: 0.95rem;
   font-style: italic;
   text-align: center;
 }
@@ -681,7 +686,7 @@ h1 {
   max-width: 33rem;
   margin-bottom: 1rem;
   color: #625c59;
-  font-size: 0.88rem;
+  font-size: 0.98rem;
   line-height: 1.95;
 }
 
@@ -693,7 +698,7 @@ h1 {
   padding-bottom: 0.3rem;
   border-bottom: 1px solid var(--rose);
   color: var(--ink);
-  font-size: 0.68rem;
+  font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
   transition: color 180ms ease, gap 180ms ease;
@@ -728,7 +733,7 @@ h1 {
   margin-bottom: 1.75rem;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2.2rem, 5.4vw, 4.4rem);
   letter-spacing: -0.045em;
   line-height: 1.2;
 }
@@ -760,7 +765,7 @@ h1 {
   margin: 1rem 0 0;
   color: #c5c1bf;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.87rem;
+  font-size: 0.98rem;
   font-style: italic;
   line-height: 1.7;
 }
@@ -780,7 +785,7 @@ h1 {
   gap: 0.35em;
   margin: 0 0 0.7rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: clamp(2rem, 3.3vw, 2.65rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1.15;
@@ -797,7 +802,7 @@ h1 {
   gap: 0.6rem;
   color: var(--white);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(1.55rem, 3.3vw, 2.2rem);
   text-decoration-color: var(--rose);
   text-underline-offset: 0.35em;
 }
@@ -805,13 +810,13 @@ h1 {
 .footer-email span {
   color: var(--rose);
   font-family: var(--font);
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .footer-note {
   margin: 0.5rem 0 0;
   color: #aaa5a2;
-  font-size: 0.64rem;
+  font-size: 0.95rem;
 }
 
 .back-to-top {
@@ -824,7 +829,7 @@ h1 {
 
 .back-to-top span {
   color: var(--rose);
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .footer-bottom {
@@ -835,7 +840,7 @@ h1 {
   gap: 1rem;
   border-top: 1px solid rgb(255 255 255 / 15%);
   color: #aaa5a2;
-  font-size: 0.6rem;
+  font-size: 0.95rem;
   letter-spacing: 0.04em;
 }
 
@@ -894,11 +899,11 @@ h1 {
   }
 
   .project-type {
-    font-size: 0.52rem;
+    font-size: 0.95rem;
   }
 
   .project-description {
-    font-size: 0.72rem;
+    font-size: 0.95rem;
   }
 
   .about-inner {
@@ -926,7 +931,7 @@ h1 {
   }
 
   .wordmark-name {
-    font-size: 0.6rem;
+    font-size: 0.95rem;
   }
 
   .js .menu-toggle {
@@ -941,7 +946,7 @@ h1 {
   }
 
   .menu-toggle-label {
-    font-size: 0.63rem;
+    font-size: 0.95rem;
   }
 
   .menu-toggle-icon {
@@ -979,7 +984,7 @@ h1 {
   .site-nav a {
     padding-block: 0.85rem;
     border-top: 1px solid rgb(34 34 34 / 8%);
-    font-size: 0.69rem;
+    font-size: 0.95rem;
   }
 
   .site-nav a:first-child {
@@ -1030,7 +1035,7 @@ h1 {
 
   .hero-intro {
     max-width: 31rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .scroll-cue {
@@ -1050,7 +1055,7 @@ h1 {
 
   .section-heading h2,
   .about-copy h2 {
-    font-size: clamp(2.75rem, 12vw, 4rem);
+    font-size: clamp(3rem, 13vw, 4.4rem);
   }
 
   .section-aside br {
@@ -1077,16 +1082,16 @@ h1 {
   }
 
   .project-meta h3 {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
   }
 
   .project-type {
-    font-size: 0.58rem;
+    font-size: 0.95rem;
   }
 
   .project-description {
     max-width: 27rem;
-    font-size: 0.78rem;
+    font-size: 0.98rem;
   }
 
   .portfolio-note {
@@ -1104,12 +1109,12 @@ h1 {
   }
 
   .about-copy > p:not(.eyebrow) {
-    font-size: 0.84rem;
+    font-size: 0.95rem;
   }
 
   .text-link {
     align-items: flex-start;
-    font-size: 0.64rem;
+    font-size: 0.95rem;
   }
 
   .closing {
@@ -1118,7 +1123,7 @@ h1 {
 
   .closing .eyebrow {
     justify-content: center;
-    font-size: 0.54rem;
+    font-size: 0.95rem;
   }
 
   .closing-line {
@@ -1141,11 +1146,17 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-block: 0.75rem;
-    font-size: 0.55rem;
+    font-size: 0.95rem;
   }
 
   .footer-bottom > span:nth-child(2) {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    background-position: 65% 48%;
   }
 }
 
