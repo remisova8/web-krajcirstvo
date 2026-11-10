@@ -1,6 +1,7 @@
 :root {
   color-scheme: light;
   --rose: #c98f9d;
+  --rose-deep: #925f6b;
   --sage: #a3b18a;
   --line: #d3d3d3;
   --white: #fff;
@@ -509,6 +510,45 @@ h1 {
   line-height: 1.05;
 }
 
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.about-title {
+  align-items: flex-start;
+}
+
+.about-title > span {
+  display: block;
+}
+
+.section-icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  padding: 0.15em;
+  border: 1px solid rgb(146 95 107 / 30%);
+  border-radius: 50%;
+  background: #f5e9e7;
+  fill: none;
+  stroke: var(--rose-deep);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.projects-icon {
+  width: 1.08em;
+  height: 1.08em;
+}
+
+.about-heading-icon {
+  width: 0.98em;
+  height: 0.98em;
+  margin-top: 0.04em;
+}
+
 .section-aside {
   margin: 0 0 0.35rem;
   color: var(--muted);
@@ -852,6 +892,23 @@ h1 {
 
 .footer-contact .eyebrow-line {
   background: var(--rose);
+}
+
+.footer-contact-title {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  margin: 0 0 0.7rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.contact-heading-icon {
+  width: 1.12em;
+  height: 1.12em;
 }
 
 .footer-email {
