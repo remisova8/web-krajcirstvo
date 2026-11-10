@@ -223,6 +223,40 @@ h1 {
   line-height: 1.9;
 }
 
+.hero-ornament {
+  display: block;
+  width: 12rem;
+  height: auto;
+  margin: -0.5rem 0 1.1rem;
+}
+
+.ornament-thread,
+.ornament-needle,
+.ornament-leaf {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ornament-thread {
+  stroke: var(--rose);
+  stroke-dasharray: 2 3;
+  stroke-width: 1.5;
+}
+
+.ornament-needle,
+.ornament-eye {
+  fill: none;
+  stroke: var(--ink);
+  stroke-linecap: round;
+  stroke-width: 1.2;
+}
+
+.ornament-leaf {
+  stroke: var(--sage);
+  stroke-width: 1.4;
+}
+
 .button {
   display: inline-flex;
   min-height: 3.3rem;
