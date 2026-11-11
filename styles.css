@@ -652,16 +652,30 @@ h1 {
   gap: clamp(3rem, 10vw, 10rem);
 }
 
+.about-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
 .about-photo {
-  position: relative;
-  left: clamp(6px, 1vw, 14px);
   display: block;
   width: 100%;
   max-width: 23rem;
-  justify-self: center;
   height: auto;
   object-fit: contain;
   object-position: center;
+}
+
+.about-caption {
+  width: 100%;
+  max-width: 23rem;
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .about-copy {
