@@ -1,6 +1,6 @@
 # Návrh webu pre krajčírstvo pre psov
 
-Táto stránka je súčasťou portfólia a zadania Barbory Remišovej. Ide o návrh webovej prezentácie na tému oblečenia a doplnkov pre psov, nie o prezentáciu vlastných krajčírskych služieb ani výrobkov.
+Táto stránka je súčasťou portfólia a zadania Barbory. Ide o návrh webovej prezentácie na tému oblečenia a doplnkov pre psov, nie o prezentáciu vlastných krajčírskych služieb ani výrobkov.
 
 ## Čo stránka obsahuje
 
