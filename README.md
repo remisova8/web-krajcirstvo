@@ -1,13 +1,13 @@
-# Krajčírske portfólio
+# Návrh webu pre krajčírstvo pre psov
 
-Osobná prezentačná stránka krajčírskej tvorby. Predstavuje odevy šité na mieru, premenu oblečenia a prácu s kvalitnými materiálmi. Vizuál stránky je pokojný a elegantný, s dôrazom na remeslo, detaily a fotografie.
+Táto stránka je súčasťou portfólia a zadania Barbory Remišovej. Ide o návrh webovej prezentácie na tému oblečenia a doplnkov pre psov, nie o prezentáciu vlastných krajčírskych služieb ani výrobkov.
 
 ## Čo stránka obsahuje
 
-- **Úvod** s predstavením krajčírskej tvorby.
-- **Projekty** s ukážkami odevov, upcyclingu a kúskov šitých na mieru.
-- **O mne** s informáciami o prístupe k remeslu a materiálom.
-- **Kontakt** s e-mailovým odkazom a pozvaním na spoluprácu.
+- **Úvod** s predstavením témy a účelu portfóliového zadania.
+- **Projekty** s ilustračnými návrhmi kabátikov, svetríkov a doplnkov pre psov.
+- **O projekte** s informáciami o návrhu stránky.
+- **Kontakt** ako ukážková súčasť webového návrhu.
 
 ## Súbory projektu
 
@@ -23,4 +23,4 @@ Otvorte `index.html` v prehliadači alebo použite rozšírenie na lokálny náh
 
 ## Úprava obsahu
 
-Texty, názov a ukážkové projekty upravte v `index.html`. Projekty a ich popisy sú ilustračné; nahraďte ich vlastnou tvorbou. Nahraďte aj ukážkový e-mail `ahoj@example.com` svojou kontaktnou adresou a podľa potreby aktualizujte fotografie v priečinku `img/`.
+Texty a ukážkové návrhy upravte v `index.html`. Projekty a kontaktné údaje sú ilustračné a slúžia na predstavenie témy zadania. Fotografie použité na stránke nájdete v priečinku `img/`.
