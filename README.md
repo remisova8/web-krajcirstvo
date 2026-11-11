@@ -1,13 +1,17 @@
 # Návrh webu pre krajčírstvo pre psov
 
-Táto stránka je súčasťou portfólia a zadania Barbory. Ide o návrh webovej prezentácie na tému oblečenia a doplnkov pre psov, nie o prezentáciu vlastných krajčírskych služieb ani výrobkov.
+Táto stránka vznikla na základe zadania portfólia. Témou webu je fiktívne krajčírstvo pre psov so zameraním na koncept šitia oblečenia na mieru.
+
+## Verejná stránka
+
+Po nasadení bude web dostupný na adrese [https://remisova8.github.io/web-krajcirstvo/](https://remisova8.github.io/web-krajcirstvo/). Nasadenie sa spúšťa automaticky po pushnutí zmien na vetvu `main`.
 
 ## Čo stránka obsahuje
 
-- **Úvod** s predstavením témy a účelu portfóliového zadania.
-- **Projekty** s ilustračnými návrhmi kabátikov, svetríkov a doplnkov pre psov.
-- **O projekte** s informáciami o návrhu stránky.
-- **Kontakt** ako ukážková súčasť webového návrhu.
+- **Úvod** s predstavením zadania a zvolenej témy fiktívneho krajčírstva.
+- **Oblečenie** s konceptmi kabátikov, svetríkov a viest šitých na mieru pre psov.
+- **O projekte** s informáciami o výbere témy a spracovaní zadania.
+- **Kontakt** ako súčasť návrhu webovej stránky.
 
 ## Súbory projektu
 
@@ -23,4 +27,4 @@ Otvorte `index.html` v prehliadači alebo použite rozšírenie na lokálny náh
 
 ## Úprava obsahu
 
-Texty a ukážkové návrhy upravte v `index.html`. Projekty a kontaktné údaje sú ilustračné a slúžia na predstavenie témy zadania. Fotografie použité na stránke nájdete v priečinku `img/`.
+Texty a koncepty fiktívneho krajčírstva upravte v `index.html`. Fotografie použité na stránke nájdete v priečinku `img/`.
